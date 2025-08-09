@@ -1,0 +1,23 @@
+h1{
+    color:red;
+}
+
+#rootReact, #root,#hulala{
+    color:grey;
+}
+
+#root > h1{
+    margin:auto;
+    width:50%;
+    text-align:center;
+}
+
+.center-text{
+    text-align:center;
+    color:orange
+}
+
+.center-text p{
+    text-align:left;
+    color:darkred;
+}
