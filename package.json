@@ -1,0 +1,30 @@
+{
+  "name": "reactd",
+  "version": "1.0.0",
+  "description": "react refresher",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChendyRewa/reactRefresher.git"
+  },
+  "author": "chendy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChendyRewa/reactRefresher/issues"
+  },
+  "homepage": "https://github.com/ChendyRewa/reactRefresher#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    "last 90 versions"
+  ]
+}

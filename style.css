@@ -1,23 +1,62 @@
-h1{
-    color:red;
+.header{
+    display :flex;
+    justify-content:space-between;
+    padding:10px;
+    border: 2px solid green
 }
 
-#rootReact, #root,#hulala{
-    color:grey;
+.logo-container{
+    width:200px;
 }
 
-#root > h1{
-    margin:auto;
-    width:50%;
-    text-align:center;
+.res-card{
+  width:200px;
+  padding:5px;
+  border: 1px solid brown;
 }
 
-.center-text{
-    text-align:center;
-    color:orange
+.res-card:hover{
+  background-color:red;
+  background-color: lightblue;
+  border: 5px solid brown;
+  cursor:pointer;
 }
 
-.center-text p{
-    text-align:left;
-    color:darkred;
+.logo {
+  width:100px;
+  height:100px;
+  padding:10px;
+}
+
+.nav-items {
+    display:flex;
+}
+
+.nav-items > ul {
+  display:flex;
+  list-style-type: none;
+  align-items:end;
+}
+
+.nav-items > ul li {
+  padding:10px;
+}
+
+.app{
+  padding:5px;
+}
+
+.search{
+  padding:10px;
+}
+
+.res-card-img{
+  width:100%
+}
+
+.res-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
 }
