@@ -1,25 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header=()=>{
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img src="https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/241461667_108678318235383_8942931679398586567_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LHb6N2A-mrMQ7kNvwHmaJnx&_nc_oc=Adn81tWjZNypWWxQUBooU0EDFqBYc3am4tpvM8pczqlk6kYl6OQQQyv7lv9XS6r54YY0ysy9KWidzmcOjboocm6f&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=v9d-NekT48b0e0MigE0gOQ&oh=00_AfXHrelsCEPnbpSROf01rAUjuh5geBuSPwGJd2efNZWhZw&oe=68AC303D" alt="application logo" className="logo"/>
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About US</li>
-                    <li>contact US</li>
-                    <li>Help</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-const restaurantList=[
+  const restaurantList=[
     {
         "type": "restaurant",
         "info": {
@@ -1819,40 +1798,4 @@ const restaurantList=[
     }
 ]
 
-const RestaurantCard=({resData})=>{
-   const {info}=resData;
-    return (
-        <div className="res-card">
-             <img className='res-card-img' src={info.image.url} alt={info.name}/>
-             <h4>{info.name}</h4>
-             <h6>{info.cft.text}</h6>
-             <h6>{info.rating.aggregate_rating}</h6>
-             <h6>{resData.distance}</h6>
-        </div>
-    )
-}
-
-const ResBody=()=>{
-    console.log(restaurantList)
-    return(
-        <div className="body">
-            <div className="search">Search</div>
-            <div className="res-container">
-               {restaurantList.map((res)=>{
-               return <RestaurantCard key={res.info.resId} resData={res}/>
-               })} 
-            </div>
-            </div>
-    )
-}
-
-const AppLayout=()=>{
-
-    return (<div className="app">
-        <Header></Header>
-        <ResBody/>
-    </div>)
-}
-
-const reactRoot=ReactDOM.createRoot(document.getElementById('root'));                         
-reactRoot.render(<AppLayout/>)
+export default restaurantList;
